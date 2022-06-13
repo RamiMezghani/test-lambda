@@ -11,7 +11,7 @@ export class FirstStack extends cdk.Stack {
     const myLambda = new lambda.Function(this, 'MyHandler', {
       functionName: 'firstLambda',
       runtime: lambda.Runtime.NODEJS_14_X,
-      code: lambda.Code.fromAsset('src'),
+      code: lambda.Code.fromAsset('./src'),
       handler: 'index.handler'
     })
     
